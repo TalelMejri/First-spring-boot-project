@@ -15,6 +15,7 @@ public class ProductService {
 		p = myfriend.save(p);//tsob fil base de donneé baad trajaa 
 		return p;
 	}
+
 	
 	public Product updateProduct(long ProductId,Product p) {
 		p.setProductid(ProductId);
