@@ -16,9 +16,8 @@ public class ProductService {
 		return p;
 	}
 
-	
 	public Product updateProduct(long ProductId,Product p) {
-		p.setProductid(ProductId);
+		p.setProductid(ProductId);//tarbet maa id eli fi bd 
 		p  = myfriend.save(p);
 		return p;
 	}
