@@ -30,8 +30,8 @@ public class ProductService {
 	    return  products; 
 	}
 	
-	public List<Product> getproduct(float prix){
-		return myfriend.getproduct(prix);
+	public List<Product> getproduct(String prix){
+		return myfriend.findByLibelleContaining(prix);
 	}
 	
 	public void deleteProduit(long ProductId) {
