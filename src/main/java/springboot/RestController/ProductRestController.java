@@ -1,5 +1,4 @@
 package springboot.RestController;
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,7 @@ import springboot.Entity.Product;
 import springboot.service.ProductService;
 
 @RestController
- @CrossOrigin// yaani ey waa7ed mel 3alem  enajem consomer les api mtena 
+ @CrossOrigin// yaani ay waa7ed mel 3alem  enajem consomer les api mte3na 
 public class ProductRestController {
 	
 	@Autowired
