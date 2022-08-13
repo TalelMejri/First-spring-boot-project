@@ -15,7 +15,7 @@ import springboot.Entity.Product;
 import springboot.service.ProductService;
 
 @RestController
- @CrossOrigin// yaani ay waa7ed mel 3alem  enajem consomer les api mte3na 
+@CrossOrigin// yaani ay waa7ed mel 3alem  enajem consomer les api mte3na 
 public class ProductRestController {
 	
 	@Autowired
@@ -38,8 +38,9 @@ public class ProductRestController {
 	}
 	
 	@GetMapping("/getproduct")
-	public List<Product> getproduct(@RequestParam(name="prix") float prix){
-		return productservice.getproduct(prix);
+	public List<Product> getproduct(@RequestParam(name="prix") String prix){
+		List<Product> listOfProducts =productservice.getproduct(prix);
+		return listOfProducts;
    }
 	
 	@GetMapping("/ConsulterProduct")
