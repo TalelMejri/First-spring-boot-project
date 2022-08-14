@@ -2,7 +2,6 @@ package springboot.RestController;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -15,7 +14,6 @@ import springboot.Entity.Product;
 import springboot.service.ProductService;
 
 @RestController
-@CrossOrigin// yaani ay waa7ed mel 3alem  enajem consomer les api mte3na 
 public class ProductRestController {
 	
 	@Autowired
