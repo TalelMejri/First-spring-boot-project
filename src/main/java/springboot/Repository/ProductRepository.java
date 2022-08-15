@@ -18,7 +18,7 @@ public interface ProductRepository extends JpaRepository<Product,Long> {
 	List<Product> listOfPrudcts(String lib);
 	
 	
-	List<Product> findByLibelle(String libelle);
+	Product findByLibelle(String libelle);
 	List<Product> findByPrixLessThan(float prix);
 	List<Product> findByLibelleContaining(String x);
 	
