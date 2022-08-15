@@ -5,12 +5,15 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
+
 @Entity
 @Table(name="produit")
 public class Product {
 	@Id 
 	@GeneratedValue (strategy = GenerationType.AUTO)
 	private long productid;
+	@NotNull
 	private String libelle;
 	private float prix;
 	
